@@ -65,6 +65,16 @@ const Note = () => {
       - ?
       */}
 
+      <p>Static HTML</p>
+      {/* 
+      - chỉ trả về HTML
+      */}
+
+      <p>Static HTML + data JSON</p>
+      {/* 
+      - chỉ trả về HTML
+      */}
+
       <Link href={"about"}>
         <a>Page about</a>
       </Link>
