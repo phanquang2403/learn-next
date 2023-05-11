@@ -1,3 +1,5 @@
+import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   GetServerSideProps,
@@ -13,17 +15,18 @@ interface Props {
     body: string;
   }[];
 }
+
 export default function SSR({ posts }: Props) {
   const router = useRouter();
   console.log("router", router.query);
 
   return (
     <>
-      <p>Server side renderingpostId</p>
+      <p>Server side rendering postId</p>
       <ul>
         {posts.map((item, index) => (
           <li key={item.id} title={item.title}>
-            {item.body}
+            <Link href={`posts/${item.id}`}>{item.body}</Link>
           </li>
         ))}
       </ul>
