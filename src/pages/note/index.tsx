@@ -4,6 +4,8 @@ import React from "react";
 const Note = () => {
   return (
     <div>
+      <p>Automatic static optimization</p>
+
       <p>Full page reload</p>
       {/* Mỗi lần reload là tải lại tài nguyên toàn bộ */}
 

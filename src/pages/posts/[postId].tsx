@@ -15,11 +15,11 @@ export default function PostDetailPage({ posts }: Props) {
   return (
     <>
       <Card
-        title={posts.title}
+        title={posts?.title}
         extra={<a href="#">More</a>}
         style={{ width: 300 }}
       >
-        <p>{posts.body}</p>
+        <p>{posts?.body}</p>
       </Card>
     </>
   );
