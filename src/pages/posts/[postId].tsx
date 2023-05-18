@@ -4,7 +4,7 @@ interface Props {
   posts: IPost;
 }
 
-interface IPost {
+export interface IPost {
   userId: number;
   id: number;
   title: string;
